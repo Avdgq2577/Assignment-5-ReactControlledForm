@@ -1,16 +1,74 @@
-# React + Vite
+# Assignment 5 - React Controlled Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive form application built with React and Vite demonstrating Controlled Components and real-time state synchronization using the `useState` hook.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+- **Live URL:** [https://Avdgq2577.github.io/Assignment-5-ReactControlledForm/](https://Avdgq2577.github.io/Assignment-5-ReactControlledForm/)
+- **Repository:** [https://github.com/Avdgq2577/Assignment-5-ReactControlledForm](https://github.com/Avdgq2577/Assignment-5-ReactControlledForm)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Features
+- **Controlled Components:** Every form field (`name`, `email`, `phone`, `message`) derives its value from component state.
+- **Single Source of Truth:** Changes are captured through `onChange` event handlers, ensuring the React state is always the authoritative source.
+- **Real-Time Live Preview:** Instant feedback section dynamically re-renders as the user types into any input.
+- **Multi-Input Handling:** Handles multiple input types including text inputs, email inputs, and textareas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React (v19):** `useState` Hook and synthetic event handling.
+- **Vite:** Next-generation frontend build tooling.
+- **CSS3:** Form styling, responsive container, and structured output card.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+```text
+Assignment-5-ReactControlledForm/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml    # GitHub Actions workflow for GitHub Pages
+├── src/
+│   ├── App.css           # Form and live preview layout styling
+│   ├── App.jsx           # Controlled form component with useState
+│   └── main.jsx          # React DOM root entry point
+├── index.html            # Vite HTML template
+├── vite.config.js        # Vite build configuration (base: './')
+├── package.json          # Project dependencies & scripts
+└── README.md             # Project documentation
+```
+
+---
+
+## 💻 Getting Started Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Avdgq2577/Assignment-5-ReactControlledForm.git
+   ```
+
+2. **Navigate to the directory:**
+   ```bash
+   cd Assignment-5-ReactControlledForm
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌐 Deployment
+Automated via **GitHub Actions** (`.github/workflows/deploy.yml`) on every push to `main`.
